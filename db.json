@@ -1,0 +1,108 @@
+{
+    "restaurants": [
+      {
+        "_id": "1",
+        "name": "Restaurant A",
+        "address": {
+          "street": "123 Main St",
+          "city": "City A",
+          "state": "State A",
+          "country": "Country A",
+          "zip": "12345"
+        },
+        "menu": [
+          {
+            "_id": "1",
+            "name": "Dish 1",
+            "description": "Description of Dish 1",
+            "price": 10.99,
+            "image": "dish1.jpg"
+          },
+          {
+            "_id": "2",
+            "name": "Dish 2",
+            "description": "Description of Dish 2",
+            "price": 12.99,
+            "image": "dish2.jpg"
+          }
+        ]
+      },
+      {
+        "_id": "2",
+        "name": "Restaurant B",
+        "address": {
+          "street": "456 Elm St",
+          "city": "City B",
+          "state": "State B",
+          "country": "Country B",
+          "zip": "67890"
+        },
+        "menu": [
+          {
+            "_id": "3",
+            "name": "Dish 3",
+            "description": "Description of Dish 3",
+            "price": 8.99,
+            "image": "dish3.jpg"
+          },
+          {
+            "_id": "4",
+            "name": "Dish 4",
+            "description": "Description of Dish 4",
+            "price": 9.99,
+            "image": "dish4.jpg"
+          }
+        ]
+      }
+    ],
+    "orders": [
+      {
+        "_id": "1",
+        "user": "123",
+        "restaurant": "1",
+        "items": [
+          {
+            "name": "Dish 1",
+            "price": 10.99,
+            "quantity": 2
+          },
+          {
+            "name": "Dish 2",
+            "price": 12.99,
+            "quantity": 1
+          }
+        ],
+        "totalPrice": 34.97,
+        "deliveryAddress": {
+          "street": "789 Maple St",
+          "city": "City C",
+          "state": "State C",
+          "country": "Country C",
+          "zip": "54321"
+        },
+        "status": "placed"
+      },
+      {
+        "_id": "2",
+        "user": "456",
+        "restaurant": "2",
+        "items": [
+          {
+            "name": "Dish 3",
+            "price": 8.99,
+            "quantity": 3
+          }
+        ],
+        "totalPrice": 26.97,
+        "deliveryAddress": {
+          "street": "987 Oak St",
+          "city": "City D",
+          "state": "State D",
+          "country": "Country D",
+          "zip": "98765"
+        },
+        "status": "on the way"
+      }
+    ]
+  }
+  
